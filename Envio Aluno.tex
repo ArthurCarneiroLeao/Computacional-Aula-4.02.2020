@@ -1,0 +1,51 @@
+%O BibTeX permite que você utilize um arquivo externo para organizar suas referências bibliográficas (.bib). A maneira de citar a referência no documento TeX não é alterada, porém basta informar dentro do documento TeX o nome do arquivo com as referências.
+%Vamos supor que o arquivo contendo as referências seja "ref.bib" e o documento TeX seja "teste.tex". Para vincular o documento .bib ao documento TeX utilizamos o comando \bibliography, conforme o exemplo abaixo
+\documentclass[11PT,preprint,authoryear]{elsarticle}
+\includeonly{Conclus,Section}
+%\documentclass[11pt]{article}
+%\usepackage{cite}
+%\usepackage{natbib}
+\begin{document}
+\title{CENSORED REGRESSION MODEL}
+\author{Prof. Aldo M. Garay}
+\maketitle
+\section{Introduction}
+
+Regression models with normal observational errors  are usually
+applied  to model symmetrical data. However, it is well-known that
+several phenomena are not always in agreement with the assumptions
+of the normal model, yielding data  with heavier tails or skewed or
+multimodal distributions. A good alternative is to consider errors
+with a more flexible class of distributions, such as, the Student-t
+distribution. For instance, \cite{fernandez1999multivariate} discuss
+some inferential procedures in regression models with Student-t
+distribution for the errors. \cite{Pinheiro01} proposed a
+multivariate Student-t linear mixed model (t-LME) and demonstrated its
+robustness against outliers through extensive simulations.
+\cite{lin2006bayesian} and \cite{lin2007bayesian} developed some
+additional tools for t-LME from likelihood-based and Bayesian
+perspectives. More recently, \cite{IbacachePulgar20111462}, proposed
+local influence measures in the Student-t partially linear
+regression model. Other existing methods for robust estimation are
+based on the class of scale mixtures of normal  (SMN) distributions. This class of
+distributions is symmetric and thick-tailed and includes as special
+cases many symmetric distributions, such as, the normal, Pears
+type VII, Student-t, slash and the contaminated normal. For an
+overview and applications, see for instance, \cite{Andrews1974},
+\citep{Lange93} and \cite{Rosa2003}.
+
+In this work, we are interested in fitting  regression models when
+the responses are possibly   censored.  Censoring occurs in several
+practical situations, for reasons such as
+limitations of measuring equipment or from experimental
+design. Roughly speaking, a censored observation  contains only
+partial information about an  event of interest.  
+
+Another referencies is \cite{Branco2012}
+
+%\section*{References}
+\bibliographystyle{elsarticle-harv}
+\bibliography{teste}
+
+\end{document}
+

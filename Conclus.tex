@@ -1,0 +1,31 @@
+\section{Conclusions}
+We have proposed a robust approach to linear regression models with
+censored observations based on the scale mixtures of normal
+distributions, called the \textrm{SMN-CR} models. This offers a
+great deal of flexibility in dealing with censored data in the
+presence of outliers.  A novel ECME algorithm to obtain approximated
+ML estimates is developed by exploring the statistical properties of
+the truncated SMN distributions. Our proposed algorithm has a
+closed-form expression for the E-step, based on formulas for the
+moments of the truncated SMN distribution. We applied our
+methodology to a real data (freely downloadable from R) as well as
+to simulated data to illustrate how the procedures can be used to
+evaluate model assumptions, identify outliers, and obtain robust
+parameter estimates.  From these results it is encouraging that the
+use of \textrm{SMN-CR} models offer better fitting, better
+protection against outliers and more precise inferences than their
+normal counterparts.
+
+Although the \textrm{SMN-CR} models considered here has shown great
+flexibility to modeling symmetric data, its robustness against
+outliers can be seriously affected by the presence of skewness.
+Recently, \cite{Lachos_Ghosh_Arellano_2009}  proposed a remedy to
+accommodate skewness and heavy-tailedness simultaneously, using
+scale mixtures of skew-normal (SMSN) distributions. We conjecture
+that our methodology can be used under CR models, and should yield
+satisfactory results at the expense of additional complexity in
+implementation. An in-depth investigation of such extensions is
+beyond the scope of the present paper, but it is an interesting
+topic for further research. Finally, the proposed EM-type algorithm
+has been coded and implemented in the R package \emph{SMNCensReg},
+which is available for download at CRAN repository.
